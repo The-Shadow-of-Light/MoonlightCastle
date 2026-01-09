@@ -10,6 +10,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
     <link rel="icon" type="image/png" href="images/favicon.png" />
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"
+    ></script>
   </head>
   <body>
     <div class="wrapper">
@@ -62,12 +66,15 @@
             </p>
             <h3>Email = theshadowoflight@proton.me</h3>
           </div>
-          <img
-            src="images/theshadowoflightpfp.png"
-            alt="Logo"
+          <model-viewer
+            src="models/moon.glb"
+            alt="A 3D model of the Moon"
+            auto-rotate
+            camera-controls
             class="logo slide-right"
-            width="400"
-          />
+            style="width: 400px; height: 400px; border: none"
+          >
+          </model-viewer>
         </div>
       </main>
 
@@ -89,6 +96,10 @@
           <i class="fa-brands fa-youtube"></i>
         </a>
         <p>© 2026 The Shadow of Light</p>
+        <p style="font-size: 0.8rem; opacity: 0.7">
+          3D Moon Model courtesy of
+          <a href="https://science.nasa.gov/" target="_blank">NASA</a>
+        </p>
       </footer>
     </div>
     <script src="js/script.js"></script>
